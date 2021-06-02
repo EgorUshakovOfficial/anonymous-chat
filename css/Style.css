@@ -1,0 +1,62 @@
+body{
+	font-family: sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	background: lightblue;
+}
+
+
+.container{
+	margin-top: 5%;
+	width: 40%;
+}
+
+.header{
+	overflow: hidden;
+	background: rgb(4, 137, 194);
+}
+
+.header h1{
+	font-weight: 100;
+	color: white;
+	text-align: center;
+}
+
+.chat-form{
+	background: rgb(8, 149, 209);
+	display: flex;
+	flex-direction: column;
+}
+
+.chat-form label{
+	align-self: center;
+	margin-top: 2%;
+	color: white;
+	font-size: 1.2rem;
+}
+
+.chat-form input, #rooms{
+	padding: 5px;
+}
+
+
+#username:focus{
+	outline: none;
+}
+
+#rooms{
+	font-size: 1rem;
+}
+
+#submit{
+	cursor: pointer;
+	color:white;
+	background: rgb(3, 196, 0);
+	font-size: 1.2rem;
+}
+
+#submit:focus{
+	outline: none;
+}
