@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Anonymous Chat</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Egor Ushakov">
+	<meta name="description" content="Welcome to anonymous chat">
+	<link rel="stylesheet" type="text/css" href="./css/chatStyle.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Chatcord</h1>
+			<a href="/">Leave Room</a>
+		</div>
+		<div class="content">
+			<div class="info">
+				<h2>Room Name:</p>
+				h2 #{rooms}
+				<hr>
+				<h2>Users</h2>
+				<ul class="users" id='users'>
+				</ul>
+			</div>
+			<div class="chat-box" id="messages">
+			</div>
+		</div>
+		<form id="chat-form" class="chat-form">
+			<input type="text" name="message" id="input">
+			<input type="submit" value="Send Message" id="submit">
+		</div>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src='script.js'></script>
+</body>
+</html>
